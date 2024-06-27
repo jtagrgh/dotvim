@@ -15,7 +15,7 @@ set path+=**
 set wildmenu
 set wildignorecase
 set breakindent
-set breakindentopt=shift:2
+set breakindentopt=shift:0
 set showbreak=>>
 set exrc
 set secure
@@ -28,6 +28,10 @@ set nowrapscan
 set guifont=SFMono-Regular:h12
 let g:loaded_matchparen=1
 let g:netrw_banner=0
+let g:tex_no_error=1
+set colorcolumn=72
+hi ColorColumn guibg=#fefefe
+set textwidth=72
 
 function SyntaxUnderCursor()
     echo synIDattr(synID(line("."), col("."), 1), "name")
